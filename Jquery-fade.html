@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jquery Fade </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1 class="t">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quidem eius animi quaerat, molestias dolorum facilis ut amet expedita. Asperiores numquam autem eos saepe inventore impedit illo possimus fugiat quisquam?</h1>
+
+    <button class="bt1">fadeout</button>
+    <button class="bt2">fadein</button>
+    <button class="bt3">fadeToggle</button>
+    <button class="bt4">fadeTo</button>
+
+    <script>
+        h1 = $('.t');
+
+        // $('.bt1').click(
+        //     () => {
+        //         h1.fadeOut()
+        //     }
+        // )
+
+        // $('.bt2').click(
+        //     () => {
+        //         h1.fadeIn()
+        //     }
+        // )
+
+        // $('.bt3').click(
+        //     () => {
+        //         h1.fadeToggle()
+        //     }
+        // )
+
+        // timeing
+
+        $('.bt1').click(
+            () => {
+                h1.fadeOut(1000)
+            }
+        )
+
+        $('.bt2').click(
+            () => {
+                h1.fadeIn(1000)
+            }
+        )
+
+        $('.bt3').click(
+            () => {
+                h1.fadeToggle(2000)
+            }
+        )
+
+        // fadein 2 value thi kaam kare che
+
+        $('.bt4').click(
+            () => {
+                h1.fadeTo('slow', 0.2)
+            }
+        )
+    </script>
+</body>
+
+</html>

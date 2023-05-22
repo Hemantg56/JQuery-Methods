@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JQuery Travesing </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .main {
+            padding: 25px;
+        }
+        
+        .main * {
+            display: block;
+            padding: 25px;
+            border: 3px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="gp">grandParant
+            <ul>ul
+                <li>li
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="gp">grandParant
+            <ul>ul
+                <li>li
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="gp">grandParant
+            <ul>ul
+                <li>li
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JQuery Traversing Methods -->
+    <!-- 
+        1. Parents             ==> child na je perents hoy ene css lage 
+        2. Parent              ==> child jena under hoy ene j css lage  
+        3. ParentsUntil()      ==> PerntsUntil na uder main lakiye to main na under chlid na parents css lage 
+        4. Childern            ==> Perent na under jetlu pan childern hoy ena par css lage 
+        5. Find(child nu name) ==> pahela parent ne get karavi ne method find na bracket na under chlid nu tagname, classname, idname   rakho to css lage
+    -->
+    <script>
+        // $('span').parents().css('border', '3px solid red')
+
+        // $('span').parent().css('border', '3px solid red')
+
+        // $('span').parentsUntil('.gp').css('border', '3px solid red')
+
+        // $('.gp').children().css('background', 'blue')
+
+        $('.gp').find('ul').css('background', 'lightblue')
+
+        $('.gp').find('li').css('background', 'lightcoral')
+
+        $('.gp').find('span').css('background', 'pink')
+
+        $('.main').find('.gp').css('background', 'red')
+
+        // $('.gp').find('li').css('border', '3px solid red')
+        // = $('.main');
+
+        // for (i = 0; i < 10; i++) {
+        //     document.getElementsByClassName('main')
+        // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> metjod- hide/show/toggle </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 class="t">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quidem eius animi quaerat, molestias dolorum facilis ut amet expedita. Asperiores numquam autem eos saepe inventore impedit illo possimus fugiat quisquam?</h1>
+
+    <button class="bt1">hide</button>
+    <button class="bt2">show</button>
+    <button class="bt3">hide/show</button>
+
+    <script>
+        h1 = $('.t')
+
+
+        $(document).ready(
+            () => {
+
+
+                /* $('.bt1').click(() => {
+                     $('.t').hide()
+                 })
+
+                 $('.bt2').click(() => {
+                     $('.t').show()
+                 })
+
+                 $('.bt3').click(() => {
+                     $(h1).toggle()
+                 }) */
+
+
+                // time par java mate
+
+                // $('.bt1').click(() => {
+                //     $('.t').hide(1000)
+                // })
+
+                // $('.bt2').click(() => {
+                //     $('.t').show(2000)
+                // })
+
+                // $('.bt3').click(() => {
+                //     $('.t').toggle(1000)
+                // })
+
+                // $('h1').click(
+                //     () => {
+                //         $('h1').hide()
+                //     }
+                // )
+
+
+
+                // this keyword ma function lakhavu pade 
+                // erro function thi nahi thay
+                $('button').click(
+                    function() {
+                        $(this).hide();
+                    }
+                )
+
+            }
+        )
+    </script>
+
+</body>
+
+</html>

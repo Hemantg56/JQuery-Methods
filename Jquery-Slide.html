@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Slide method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .heading,
+        .ans {
+            background-color: brown;
+            border: 2px solid;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        .ans {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heading"> Quation </div>
+    <div class="ans">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur esse aut consectetur consequuntur natus a, dolores architecto saepe itaque deleniti praesentium distinctio. Sequi labore sapiente eius autem, enim dicta sed.</div>
+
+    <script>
+        heading = $('.heading')
+        ans = $('.ans')
+
+        // heading.click(
+        //     () => {
+        //         ans.slideDown()
+        //     }
+        // )
+
+        // heading.click(
+        //     () => {
+        //         ans.slideUp()
+        //     }
+        // )
+
+        heading.click(
+            () => {
+                ans.slideToggle()
+            }
+        )
+    </script>
+</body>
+
+</html>

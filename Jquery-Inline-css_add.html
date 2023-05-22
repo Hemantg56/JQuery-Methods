@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inline-CSS Add </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 class="t">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad veniam a sed quam, tempore magnam similique consequuntur maxime, beatae non odit eveniet fugiat cupiditate vel minus asperiores delectus! Assumenda.
+    </h1>
+
+    <button class="bt1">addcss</button>
+    <button class="bt2">removecss</button>
+    <button class="bt3">add/removecss</button>
+
+    <script>
+        h1 = $('.t');
+
+        $('.bt1').click(
+            () => {
+                h1.css("color", "red")
+                h1.css("background", "#000")
+                h1.css("font-size", "60px")
+            }
+        )
+
+        $('.bt2').click(
+            () => {
+                h1.css("color", "")
+                h1.css("background", "")
+                h1.css("font-size", "")
+            }
+        )
+
+        // $('.bt3').click(
+        //     () => {
+        //         h1.css('color', 'red')
+        //     }
+        // )
+
+        // multipual value nakhvu mate 
+        // ek j varibal ma nakava mate 
+        // Syntex
+        // h1.css({})
+        // h1.css({
+        //             "color": "red",
+        //             'background': 'black',
+        //             'font-size': '40px'
+        //         })
+
+        $('.bt3').click(
+            () => {
+                h1.css({
+                    "color": "red",
+                    'background': 'black',
+                    'font-size': '40px'
+                })
+            }
+        )
+    </script>
+</body>
+
+</html>

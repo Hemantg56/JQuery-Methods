@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Animate and css </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background: lightblue;
+            position: absolute;
+            /* transition: 2s; */
+        }
+        
+        button {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <!-- animate and css ma tafavat -->
+
+    <!-- animate == smooth thi move thay 
+                    and transition nai rakvu pade -->
+
+    <!-- css == smooth nahi hoy and transition rakvanu jaroor pade smooth karva mate -->
+
+    <div></div>
+    <button class="c1">class</button>
+    <button class="a1">animate</button>
+
+    <script>
+        div = $('div')
+
+        // div.css({})
+
+        // $('.c1').click(
+        //     function() {
+        //         div.css('left', '900px')
+        //     }
+        // )
+
+        $('.a1').click(
+            function() {
+                div.animate({
+                    "left": "1000px",
+                    "top": "200px"
+                })
+            }
+        )
+    </script>
+</body>
+
+</html>

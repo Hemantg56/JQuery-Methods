@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JQuery noConflict() </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <!-- As you already know; jQuery uses the $ sign as a shortcut for jQuery.
+         જેમ તમે પહેલાથી જ જાણો છો; jQuery $ ચિહ્નનો ઉપયોગ jQuery માટે શોર્ટકટ તરીકે કરે છે. -->
+
+    <!-- There are many other popular JavaScript frameworks like: Angular, Backbone, Ember, Knockout, and more.
+         અન્ય ઘણા લોકપ્રિય JavaScript ફ્રેમવર્ક છે જેમ કે: કોણીય, બેકબોન, એમ્બર, નોકઆઉટ અને વધુ. -->
+
+    <!-- What if other JavaScript frameworks also use the $ sign as a shortcut?
+         જો અન્ય JavaScript ફ્રેમવર્ક પણ શોર્ટકટ તરીકે $ ચિહ્નનો ઉપયોગ કરે તો શું? -->
+
+    <!-- If two different frameworks are using the same shortcut, one of them might stop working.
+         જો બે અલગ-અલગ ફ્રેમવર્ક એક જ શૉર્ટકટનો ઉપયોગ કરી રહ્યાં હોય, તો તેમાંથી એક કામ કરવાનું બંધ કરી શકે છે. -->
+
+    <!-- The jQuery team have already thought about this, and implemented the noConflict() method.
+         jQuery ટીમે આ વિશે પહેલેથી જ વિચાર્યું છે, અને noConflict() પદ્ધતિનો અમલ કર્યો છે. -->
+
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, corrupti commodi! Deleniti, laboriosam ab aut natus dignissimos, exercitationem voluptas blanditiis, provident illo quas voluptatum. Praesentium ipsam dolorum suscipit consequuntur
+        earum?
+    </p>
+    <script>
+        $.noConflict();
+
+        hemant = $.noConflict();
+
+        hemant('p').click(function() {
+            hemant('p').hide()
+        })
+    </script>
+</body>
+
+</html>

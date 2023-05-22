@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JQuery Filtering </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- style ma aapva mate sudoclass element  -->
+    <!-- <style>
+        h1:nth-child(4) {
+            background-color: lightblue;
+            color: brown;
+        }
+    </style> -->
+</head>
+
+<body>
+    <h1>heading1</h1>
+    <h1>heading1</h1>
+    <h1>heading1</h1>
+    <h1>heading1</h1>
+    <h1>heading1</h1>
+
+    <!-- 
+    style        ==  JQuery
+    first-child  ==  first()
+    last-child   ==  last()
+    nth-child()  ==  eq 
+    -->
+
+
+    <!-- jquery ma filter chlid aapva mate -->
+    <!-- first,last,eq() -->
+
+    <!-- eq ==> ma nth jevu j hoy ema pan arry nu index kaam kare  -->
+
+    <script>
+        $('h1').first().css({
+            'background': 'lightblue',
+            'color': 'brown'
+        })
+
+        $('h1').last().css({
+            'background': 'lightblue',
+            'color': 'brown'
+        })
+
+        $('h1').eq(2).css({
+            'background': 'lightblue',
+            'color': 'brown'
+        })
+    </script>
+</body>
+
+</html>
